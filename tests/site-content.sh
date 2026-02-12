@@ -105,6 +105,8 @@ grep -Fq "KindChat — AI-moderated messaging" about.html || { echo "about page 
 grep -Fq "Emosig — AI-based emotional signal research" about.html || { echo "about page missing Emosig mention"; exit 1; }
 grep -Fq "Founded by Yuri Zelikov" about.html || { echo "about page missing founder line"; exit 1; }
 grep -Fq "https://www.linkedin.com/in/yuri-zelikov-8aa9167/" about.html || { echo "about page missing LinkedIn link"; exit 1; }
+grep -Fq "https://x.com/wavelylabs" about.html || { echo "about page missing X link"; exit 1; }
+grep -Fq "https://www.linkedin.com/company/wavelylabs/about/?viewAsMember=true" about.html || { echo "about page missing company LinkedIn link"; exit 1; }
 
 for page in index.html about.html privacy.html terms.html; do
   grep -Fq "class=\"site-header\"" "$page" || { echo "missing header in $page"; exit 1; }
