@@ -5,6 +5,14 @@ FILE="index.html"
 [ -f "$FILE" ] || { echo "missing $FILE"; exit 1; }
 
 required=(
+  "class=\"site-header\""
+  "class=\"brand-logo\" src=\"assets/wavelylabs-logo.webp\""
+  "class=\"brand-name\">WavelyLabs</span>"
+  "class=\"site-nav\""
+  "href=\"/\""
+  "href=\"/about\""
+  "href=\"/privacy\""
+  "href=\"/terms\""
   "assets/wavelylabs-logo.webp"
   "assets/wavelylabs-header.webp"
   "alt=\"WavelyLabs logo\""
@@ -99,6 +107,12 @@ grep -Fq "KindChat — AI-moderated messaging" about.html || { echo "about page 
 grep -Fq "Emosig — AI-based emotional signal research" about.html || { echo "about page missing Emosig mention"; exit 1; }
 grep -Fq "Founded by Yuri Zelikov" about.html || { echo "about page missing founder line"; exit 1; }
 grep -Fq "https://www.linkedin.com/in/yuri-zelikov-8aa9167/" about.html || { echo "about page missing LinkedIn link"; exit 1; }
+
+for page in index.html about.html privacy.html terms.html; do
+  grep -Fq "class=\"site-header\"" "$page" || { echo "missing header in $page"; exit 1; }
+  grep -Fq "class=\"brand-logo\" src=\"assets/wavelylabs-logo.webp\"" "$page" || { echo "missing header logo in $page"; exit 1; }
+  grep -Fq "class=\"site-nav\"" "$page" || { echo "missing header nav in $page"; exit 1; }
+done
 
 grep -Fq "Last updated: February 12, 2026" privacy.html || { echo "privacy page missing last updated date"; exit 1; }
 grep -Fq "Data We Collect" privacy.html || { echo "privacy page missing data policy section"; exit 1; }
