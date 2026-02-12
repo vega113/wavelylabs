@@ -160,6 +160,54 @@ a {
   padding: 22px;
 }
 
+.examples-subtitle {
+  margin: 0 0 10px;
+  font-size: 1.18rem;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.proof-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: 12px;
+}
+
+.proof-card h4 {
+  margin: 0 0 8px;
+  font-size: 0.98rem;
+}
+
+.real-shot {
+  margin: 0;
+  border-radius: 10px;
+  border: 1px solid #9eb2bf;
+  overflow: hidden;
+  background: #0c1620;
+}
+
+.real-shot img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.real-shot figcaption {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 0.84rem;
+  color: #314f5e;
+  border-top: 1px solid #9eb2bf;
+  background: #f4f8fb;
+}
+
 .example-block + .example-block {
   margin-top: 12px;
 }
@@ -219,6 +267,7 @@ a {
   }
 
   .cards,
+  .proof-grid,
   .preview-row {
     grid-template-columns: 1fr;
   }
