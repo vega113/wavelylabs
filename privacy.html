@@ -5,75 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy | WavelyLabs</title>
   <meta name="description" content="Privacy policy for WavelyLabs, operator of SlidesLab and Tube2Web." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@500;600;700&family=Sora:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <a class="brand" href="/" aria-label="WavelyLabs home">
       <img class="brand-logo" src="assets/wavelylabs-logo.webp" alt="WavelyLabs logo" width="400" height="400" />
-      <span class="brand-name">WavelyLabs</span>
+      <span class="brand-lockup">
+        <span class="brand-name">WavelyLabs</span>
+        <span class="brand-subtitle">SlidesLab + Tube2Web</span>
+      </span>
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="/">Home</a>
       <a href="/about">About</a>
-      <a href="/privacy">Privacy</a>
+      <a href="/privacy" aria-current="page">Privacy</a>
       <a href="/terms">Terms</a>
     </nav>
   </header>
-  <main class="page">
-    <section>
+  <main class="page" id="main-content" tabindex="-1">
+    <section class="legal-overview">
       <h1>Privacy Policy</h1>
-      <p>Last updated: February 12, 2026</p>
+      <p class="legal-meta">Last updated: February 12, 2026</p>
       <p>This policy applies to <strong>wavelylabs.com</strong> and describes how WavelyLabs handles data in its role as the operator behind SlidesLab and Tube2Web.</p>
+    </section>
 
-      <h2>Operator and Data Controller</h2>
-      <p>WavelyLabs is operated by Yuri Zelikov (sole proprietor), based in Tel Aviv, Israel. For privacy or data requests, contact <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a>.</p>
+    <section class="legal-layout">
+      <nav class="legal-toc" aria-label="Privacy policy table of contents">
+        <p class="legal-toc-title">On this page</p>
+        <ol class="legal-toc-list">
+          <li><a href="#operator-and-data-controller">Operator and Data Controller</a></li>
+          <li><a href="#data-we-collect">Data We Collect</a></li>
+          <li><a href="#how-we-use-data">How We Use Data</a></li>
+          <li><a href="#third-party-processors">Third-Party Processors</a></li>
+          <li><a href="#cookies-and-analytics">Cookies and Analytics</a></li>
+          <li><a href="#data-retention">Data Retention</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#international-transfers">International Transfers</a></li>
+          <li><a href="#your-rights">Your Rights</a></li>
+          <li><a href="#childrens-privacy">Children's Privacy</a></li>
+          <li><a href="#changes-to-this-policy">Changes to This Policy</a></li>
+          <li><a href="#support-channels">Support Channels</a></li>
+        </ol>
+      </nav>
 
-      <h2>Data We Collect</h2>
-      <ul class="feature-list">
-        <li>Contact and correspondence data (emails sent to support or legal contacts)</li>
-        <li>Website analytics and security logs (IP address, browser/device metadata, request logs)</li>
-        <li>Operational data needed to maintain services and prevent abuse</li>
-      </ul>
-      <p>Product-specific account and usage data is governed by each product's own policy on <a href="https://slideslab.ai" target="_blank" rel="noopener noreferrer">SlidesLab</a> and <a href="https://tube2web.ai" target="_blank" rel="noopener noreferrer">Tube2Web</a>.</p>
+      <div class="legal-content">
+        <h2 class="legal-section-title">Policy Sections</h2>
 
-      <h2>How We Use Data</h2>
-      <ul class="feature-list">
-        <li>Operate and secure the website and related services</li>
-        <li>Respond to support, legal, and compliance requests</li>
-        <li>Monitor performance and diagnose reliability issues</li>
-        <li>Comply with legal obligations and fraud-prevention requirements</li>
-      </ul>
+        <article class="about-item" id="operator-and-data-controller" aria-labelledby="operator-and-data-controller-heading">
+          <h3 id="operator-and-data-controller-heading">Operator and Data Controller</h3>
+          <p>WavelyLabs is operated by Yuri Zelikov (sole proprietor), based in Tel Aviv, Israel. For privacy or data requests, contact <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a>.</p>
+        </article>
 
-      <h2>Third-Party Processors</h2>
-      <p>Depending on the service path, WavelyLabs uses infrastructure and processing providers such as Cloudflare, Supabase, OpenAI, Google, and payment Merchant of Record providers (Lemon Squeezy or Polar). Each provider processes data under its own contractual terms and privacy policy.</p>
+        <article class="about-item" id="data-we-collect" aria-labelledby="data-we-collect-heading">
+          <h3 id="data-we-collect-heading">Data We Collect</h3>
+          <ul class="feature-list">
+            <li>Contact and correspondence data (emails sent to support or legal contacts)</li>
+            <li>Website analytics and security logs (IP address, browser/device metadata, request logs)</li>
+            <li>Operational data needed to maintain services and prevent abuse</li>
+          </ul>
+          <p>Product-specific account and usage data is governed by each product's own policy on <a href="https://slideslab.ai" target="_blank" rel="noopener noreferrer">SlidesLab</a> and <a href="https://tube2web.ai" target="_blank" rel="noopener noreferrer">Tube2Web</a>.</p>
+        </article>
 
-      <h2>Cookies and Analytics</h2>
-      <p>We use essential technical storage for security and site operation. Limited analytics may be used to understand reliability and usage patterns. You can control non-essential cookies through browser settings where applicable.</p>
+        <article class="about-item" id="how-we-use-data" aria-labelledby="how-we-use-data-heading">
+          <h3 id="how-we-use-data-heading">How We Use Data</h3>
+          <ul class="feature-list">
+            <li>Operate and secure the website and related services</li>
+            <li>Respond to support, legal, and compliance requests</li>
+            <li>Monitor performance and diagnose reliability issues</li>
+            <li>Comply with legal obligations and fraud-prevention requirements</li>
+          </ul>
+        </article>
 
-      <h2>Data Retention</h2>
-      <p>We retain data only as long as needed for service operation, support handling, legal obligations, and fraud prevention. Data that is no longer needed is deleted or anonymized on a rolling basis.</p>
+        <article class="about-item" id="third-party-processors" aria-labelledby="third-party-processors-heading">
+          <h3 id="third-party-processors-heading">Third-Party Processors</h3>
+          <p>Depending on the service path, WavelyLabs uses infrastructure and processing providers such as Cloudflare, Supabase, OpenAI, Google, and payment Merchant of Record providers (Lemon Squeezy or Polar). Each provider processes data under its own contractual terms and privacy policy.</p>
+        </article>
 
-      <h2>Security</h2>
-      <p>We use standard administrative, technical, and organizational safeguards, including encrypted transport (HTTPS/TLS), access controls, and operational logging. No system is 100% secure.</p>
+        <article class="about-item" id="cookies-and-analytics" aria-labelledby="cookies-and-analytics-heading">
+          <h3 id="cookies-and-analytics-heading">Cookies and Analytics</h3>
+          <p>We use essential technical storage for security and site operation. Limited analytics may be used to understand reliability and usage patterns. You can control non-essential cookies through browser settings where applicable.</p>
+        </article>
 
-      <h2>International Transfers</h2>
-      <p>Infrastructure providers may process data in multiple jurisdictions. By using the services, you acknowledge that data may be transferred and processed outside your country.</p>
+        <article class="about-item" id="data-retention" aria-labelledby="data-retention-heading">
+          <h3 id="data-retention-heading">Data Retention</h3>
+          <p>We retain data only as long as needed for service operation, support handling, legal obligations, and fraud prevention. Data that is no longer needed is deleted or anonymized on a rolling basis.</p>
+        </article>
 
-      <h2>Your Rights</h2>
-      <p>Subject to applicable law, you may request access, correction, deletion, export, or restriction of personal data. Send requests to <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a>.</p>
+        <article class="about-item" id="security" aria-labelledby="security-heading">
+          <h3 id="security-heading">Security</h3>
+          <p>We use standard administrative, technical, and organizational safeguards, including encrypted transport (HTTPS/TLS), access controls, and operational logging. No system is 100% secure.</p>
+        </article>
 
-      <h2>Children's Privacy</h2>
-      <p>WavelyLabs services are not intended for children under 13. If you believe a child provided personal data, contact us so we can investigate and remove it.</p>
+        <article class="about-item" id="international-transfers" aria-labelledby="international-transfers-heading">
+          <h3 id="international-transfers-heading">International Transfers</h3>
+          <p>Infrastructure providers may process data in multiple jurisdictions. By using the services, you acknowledge that data may be transferred and processed outside your country.</p>
+        </article>
 
-      <h2>Changes to This Policy</h2>
-      <p>We may update this policy from time to time. Material updates are reflected by the "Last updated" date on this page.</p>
+        <article class="about-item" id="your-rights" aria-labelledby="your-rights-heading">
+          <h3 id="your-rights-heading">Your Rights</h3>
+          <p>Subject to applicable law, you may request access, correction, deletion, export, or restriction of personal data. Send requests to <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a>.</p>
+        </article>
 
-      <h2>Support Channels</h2>
-      <p>Canonical support: <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a></p>
-      <p>Product aliases: <a href="mailto:support@slideslab.ai">support@slideslab.ai</a> and <a href="mailto:support@tube2web.ai">support@tube2web.ai</a></p>
+        <article class="about-item" id="childrens-privacy" aria-labelledby="childrens-privacy-heading">
+          <h3 id="childrens-privacy-heading">Children's Privacy</h3>
+          <p>WavelyLabs services are not intended for children under 13. If you believe a child provided personal data, contact us so we can investigate and remove it.</p>
+        </article>
 
-      <p><a href="/">Back to home</a></p>
+        <article class="about-item" id="changes-to-this-policy" aria-labelledby="changes-to-this-policy-heading">
+          <h3 id="changes-to-this-policy-heading">Changes to This Policy</h3>
+          <p>We may update this policy from time to time. Material updates are reflected by the "Last updated" date on this page.</p>
+        </article>
+
+        <article class="about-item" id="support-channels" aria-labelledby="support-channels-heading">
+          <h3 id="support-channels-heading">Support Channels</h3>
+          <p>Canonical support: <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a></p>
+          <p>Product aliases: <a href="mailto:support@slideslab.ai">support@slideslab.ai</a> and <a href="mailto:support@tube2web.ai">support@tube2web.ai</a></p>
+        </article>
+
+        <p class="back-home"><a href="/">Back to home</a></p>
+      </div>
     </section>
   </main>
 

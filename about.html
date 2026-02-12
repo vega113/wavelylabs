@@ -7,69 +7,92 @@
   <meta name="description" content="WavelyLabs is an independent software studio focused on applied AI software for communication and knowledge workflows." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@500;600;700&family=Sora:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <a class="brand" href="/" aria-label="WavelyLabs home">
       <img class="brand-logo" src="assets/wavelylabs-logo.webp" alt="WavelyLabs logo" width="400" height="400" />
-      <span class="brand-name">WavelyLabs</span>
+      <span class="brand-lockup">
+        <span class="brand-name">WavelyLabs</span>
+        <span class="brand-subtitle">SlidesLab + Tube2Web</span>
+      </span>
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="/">Home</a>
-      <a href="/about">About</a>
+      <a href="/about" aria-current="page">About</a>
       <a href="/privacy">Privacy</a>
       <a href="/terms">Terms</a>
     </nav>
   </header>
-  <main class="page">
-    <section class="hero" aria-labelledby="about-title">
-      <h1 id="about-title">About WavelyLabs</h1>
-      <p class="tagline">A software studio focused on applied AI.</p>
-      <p class="beta-note">WavelyLabs is an independent software studio focused on applied artificial intelligence. We build AI-powered products designed to improve communication, content workflows, and digital interaction.</p>
+  <main id="main-content" class="page about-page" tabindex="-1">
+    <section class="hero about-section about-studio-intro" aria-labelledby="about-title">
+      <header class="about-section-header">
+        <h1 id="about-title">About WavelyLabs</h1>
+      </header>
+      <div class="about-section-body">
+        <p class="tagline">A software studio focused on applied AI.</p>
+        <p class="beta-note">WavelyLabs is an independent software studio focused on applied artificial intelligence. We build AI-powered products designed to improve communication, content workflows, and digital interaction.</p>
+      </div>
     </section>
 
-    <section aria-labelledby="products-title">
-      <h2 id="products-title">Current Products</h2>
+    <section class="about-section about-products" aria-labelledby="products-title">
+      <header class="about-section-header">
+        <h2 id="products-title">Current Products</h2>
+      </header>
+      <div class="about-products-list">
+        <article class="about-item about-product">
+          <h3>SlidesLab</h3>
+          <p>AI-powered slide generation for structured presentations. The product supports multi-variant slide generation, review workflows, and export-ready output including PDF/ZIP flows with transparent credit-based usage.</p>
+          <p><a href="https://slideslab.ai" target="_blank" rel="noopener noreferrer">slideslab.ai</a></p>
+        </article>
 
-      <article class="about-item">
-        <h3>SlidesLab</h3>
-        <p>AI-powered slide generation for structured presentations. The product supports multi-variant slide generation, review workflows, and export-ready output including PDF/ZIP flows with transparent credit-based usage.</p>
-        <p><a href="https://slideslab.ai" target="_blank" rel="noopener noreferrer">slideslab.ai</a></p>
-      </article>
-
-      <article class="about-item">
-        <h3>Tube2Web</h3>
-        <p>Turn YouTube channels and playlists into AI-powered websites. The product includes ingestion/import workflows, creator dashboards, transcript and article generation, semantic search, and AI chat experiences for viewers.</p>
-        <p><a href="https://tube2web.ai" target="_blank" rel="noopener noreferrer">tube2web.ai</a></p>
-      </article>
+        <article class="about-item about-product">
+          <h3>Tube2Web</h3>
+          <p>Turn YouTube channels and playlists into AI-powered websites. The product includes ingestion/import workflows, creator dashboards, transcript and article generation, semantic search, and AI chat experiences for viewers.</p>
+          <p><a href="https://tube2web.ai" target="_blank" rel="noopener noreferrer">tube2web.ai</a></p>
+        </article>
+      </div>
     </section>
 
-    <section aria-labelledby="development-title">
-      <h2 id="development-title">In Development</h2>
-      <p>WavelyLabs is also exploring additional AI-driven products:</p>
-      <ul class="feature-list">
-        <li>KindChat — AI-moderated messaging</li>
-        <li>Emosig — AI-based emotional signal research</li>
-      </ul>
+    <section class="about-section about-in-development" aria-labelledby="development-title">
+      <header class="about-section-header">
+        <h2 id="development-title">In Development</h2>
+      </header>
+      <div class="about-section-body">
+        <p>WavelyLabs is also exploring additional AI-driven products:</p>
+        <ul class="feature-list">
+          <li>KindChat — AI-moderated messaging</li>
+          <li>Emosig — AI-based emotional signal research</li>
+        </ul>
+      </div>
     </section>
 
-    <section aria-labelledby="entity-title">
-      <h2 id="entity-title">Legal Entity & Support</h2>
-      <p>WavelyLabs is operated by Yuri Zelikov as an independent sole proprietorship in Tel Aviv, Israel.</p>
-      <p>Primary support and compliance contact: <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a></p>
-      <p>Product-specific aliases: <a href="mailto:support@slideslab.ai">support@slideslab.ai</a> (SlidesLab) and <a href="mailto:support@tube2web.ai">support@tube2web.ai</a> (Tube2Web)</p>
-      <p>Applicable jurisdiction: Tel Aviv, Israel.</p>
+    <section class="about-section about-legal-entity-support" aria-labelledby="entity-title">
+      <header class="about-section-header">
+        <h2 id="entity-title">Legal Entity & Support</h2>
+      </header>
+      <div class="about-section-body">
+        <p>WavelyLabs is operated by Yuri Zelikov as an independent sole proprietorship in Tel Aviv, Israel.</p>
+        <p>Primary support and compliance contact: <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a></p>
+        <p>Product-specific aliases: <a href="mailto:support@slideslab.ai">support@slideslab.ai</a> (SlidesLab) and <a href="mailto:support@tube2web.ai">support@tube2web.ai</a> (Tube2Web)</p>
+        <p>Applicable jurisdiction: Tel Aviv, Israel.</p>
+      </div>
     </section>
 
-    <section aria-labelledby="founder-title" class="legitimacy">
-      <h2 id="founder-title">Founder</h2>
-      <p>Founded by Yuri Zelikov, software developer based in Tel Aviv.</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/yuri-zelikov-8aa9167/" target="_blank" rel="noopener noreferrer">yuri-zelikov-8aa9167</a></p>
-      <p>X: <a href="https://x.com/wavelylabs" target="_blank" rel="noopener noreferrer">@wavelylabs</a></p>
-      <p>WavelyLabs LinkedIn: <a href="https://www.linkedin.com/company/wavelylabs/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">linkedin.com/company/wavelylabs</a></p>
-      <p>Contact: <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a></p>
+    <section class="about-section about-founder legitimacy" aria-labelledby="founder-title">
+      <header class="about-section-header">
+        <h2 id="founder-title">Founder</h2>
+      </header>
+      <div class="about-section-body">
+        <p>Founded by Yuri Zelikov, software developer based in Tel Aviv.</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yuri-zelikov-8aa9167/" target="_blank" rel="noopener noreferrer">yuri-zelikov-8aa9167</a></p>
+        <p>X: <a href="https://x.com/wavelylabs" target="_blank" rel="noopener noreferrer">@wavelylabs</a></p>
+        <p>WavelyLabs LinkedIn: <a href="https://www.linkedin.com/company/wavelylabs/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer">linkedin.com/company/wavelylabs</a></p>
+        <p>Contact: <a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a></p>
+      </div>
     </section>
   </main>
 

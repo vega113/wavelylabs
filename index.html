@@ -10,72 +10,123 @@
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@500;600;700&family=Sora:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header">
     <a class="brand" href="/" aria-label="WavelyLabs home">
       <img class="brand-logo" src="assets/wavelylabs-logo.webp" alt="WavelyLabs logo" width="400" height="400" />
-      <span class="brand-name">WavelyLabs</span>
+      <span class="brand-lockup">
+        <span class="brand-name">WavelyLabs</span>
+        <span class="brand-subtitle">SlidesLab + Tube2Web</span>
+      </span>
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/">Home</a>
+      <a href="/" aria-current="page">Home</a>
       <a href="/about">About</a>
       <a href="/privacy">Privacy</a>
       <a href="/terms">Terms</a>
     </nav>
   </header>
-  <main class="page">
-    <section class="hero" aria-labelledby="site-title">
-      <figure class="hero-brand">
+  <main id="main-content" class="page" tabindex="-1">
+    <section class="hero hero-split" aria-labelledby="site-title">
+      <div class="hero-content">
+        <p class="hero-eyebrow">AI product studio</p>
+        <h1 id="site-title">WavelyLabs</h1>
+        <p class="tagline">AI tools for creators</p>
+        <p class="beta-note">Currently in public beta. Pricing is visible. Billing will be enabled at launch.</p>
+        <ul class="trust-chips" aria-label="Trust signals">
+          <li><span class="chip">Public beta</span></li>
+          <li><span class="chip">Pricing visible</span></li>
+          <li><span class="chip">Billing enabled at launch</span></li>
+        </ul>
+        <div class="hero-cta-row card-actions">
+          <a class="cta" href="#products">Explore products &rarr;</a>
+          <a class="cta" href="/about">About WavelyLabs &rarr;</a>
+        </div>
+      </div>
+      <figure class="hero-brand hero-visual">
         <img class="hero-header" src="assets/wavelylabs-header.webp" alt="WavelyLabs brand header with products SlidesLab and Tube2Web." loading="eager" fetchpriority="high" decoding="async" width="1500" height="500" />
+        <figcaption>WavelyLabs brand header featuring SlidesLab and Tube2Web.</figcaption>
       </figure>
-      <h1 id="site-title">WavelyLabs</h1>
-      <p class="tagline">AI tools for creators</p>
-      <p class="beta-note">Currently in public beta. Pricing is visible. Billing will be enabled at launch.</p>
     </section>
 
-    <section class="products" aria-labelledby="products-title">
+    <section id="products" class="products" aria-labelledby="products-title">
       <h2 id="products-title">Products</h2>
       <div class="cards">
-        <article class="card">
+        <article class="card product-card" aria-labelledby="slideslab-title">
           <figure class="real-shot product-shot">
             <a class="zoom-link" href="assets/slideslab-product-hero.webp">
               <img src="assets/slideslab-product-hero.webp" alt="SlidesLab generation status with multiple slide variants in progress." loading="eager" fetchpriority="high" decoding="async" width="1440" height="810" />
             </a>
             <figcaption>SlidesLab generation workflow with live multi-variant status.</figcaption>
           </figure>
-          <h3>SlidesLab</h3>
-          <p>Generate structured presentation slides using AI.</p>
-          <ul class="feature-list">
-            <li>Structured prompts</li>
-            <li>Slide variants</li>
-            <li>Export-ready output</li>
-          </ul>
-          <div class="card-actions">
-            <a class="cta" href="https://slideslab.ai" target="_blank" rel="noopener noreferrer">Try SlidesLab &rarr;</a>
+          <div class="product-card-body">
+            <header class="product-card-header">
+              <h3 id="slideslab-title">SlidesLab</h3>
+              <ul class="product-chips" aria-label="SlidesLab metadata">
+                <li><span class="chip">Public beta</span></li>
+                <li><span class="chip">Pricing visible</span></li>
+              </ul>
+            </header>
+            <p class="product-summary">Generate structured presentation slides using AI.</p>
+            <ul class="feature-list" aria-label="SlidesLab capabilities">
+              <li>Structured prompts</li>
+              <li>Slide variants</li>
+              <li>Export-ready output</li>
+            </ul>
+            <div class="card-actions">
+              <a class="cta" href="https://slideslab.ai" target="_blank" rel="noopener noreferrer">Try SlidesLab &rarr;</a>
+            </div>
           </div>
         </article>
-        <article class="card">
+        <article class="card product-card" aria-labelledby="tube2web-title">
           <figure class="real-shot product-shot">
             <a class="zoom-link" href="assets/tube2web-public-generated-site.webp">
               <img src="assets/tube2web-public-generated-site.webp" alt="Public Tube2Web generated site with search, AI chat, and content collections." loading="lazy" decoding="async" width="1600" height="871" />
             </a>
             <figcaption>Tube2Web generated public site with search and AI chat.</figcaption>
           </figure>
-          <h3>Tube2Web</h3>
-          <p>Turn YouTube playlists into searchable AI-powered websites.</p>
-          <ul class="feature-list">
-            <li>Auto-import videos</li>
-            <li>AI chat</li>
-            <li>Semantic search</li>
-          </ul>
-          <div class="card-actions">
-            <a class="cta" href="https://tube2web.ai" target="_blank" rel="noopener noreferrer">Explore Tube2Web &rarr;</a>
+          <div class="product-card-body">
+            <header class="product-card-header">
+              <h3 id="tube2web-title">Tube2Web</h3>
+              <ul class="product-chips" aria-label="Tube2Web metadata">
+                <li><span class="chip">Public beta</span></li>
+                <li><span class="chip">Pricing visible</span></li>
+              </ul>
+            </header>
+            <p class="product-summary">Turn YouTube playlists into searchable AI-powered websites.</p>
+            <ul class="feature-list" aria-label="Tube2Web capabilities">
+              <li>Auto-import videos</li>
+              <li>AI chat</li>
+              <li>Semantic search</li>
+            </ul>
+            <div class="card-actions">
+              <a class="cta" href="https://tube2web.ai" target="_blank" rel="noopener noreferrer">Explore Tube2Web &rarr;</a>
+            </div>
           </div>
         </article>
       </div>
+    </section>
+
+    <section class="narrative-rail" aria-labelledby="narrative-title">
+      <h2 id="narrative-title">Input to Output Workflow</h2>
+      <ol class="narrative-steps">
+        <li class="narrative-step">
+          <p class="narrative-step-label">Input</p>
+          <p>You provide a YouTube URL or a structured prompt to start generation.</p>
+        </li>
+        <li class="narrative-step">
+          <p class="narrative-step-label">Processing</p>
+          <p>The AI pipeline enriches content, generates variants, and structures outputs for publishing.</p>
+        </li>
+        <li class="narrative-step">
+          <p class="narrative-step-label">Output</p>
+          <p>Output is either a public website via Tube2Web or export-ready slides via SlidesLab.</p>
+        </li>
+      </ol>
     </section>
 
     <section class="examples" aria-labelledby="examples-title">
@@ -177,7 +228,7 @@
     </p>
   </footer>
 
-  <dialog id="image-lightbox" class="lightbox" aria-label="Expanded image preview">
+  <dialog id="image-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Expanded image preview">
     <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
     <img id="lightbox-image" class="lightbox-image" src="" alt="" />
   </dialog>
@@ -188,9 +239,35 @@
       const dialogImage = document.getElementById('lightbox-image');
       const closeButton = document.getElementById('lightbox-close');
       const zoomableLinks = document.querySelectorAll('.zoom-link');
+      const focusableSelector = [
+        'a[href]',
+        'button:not([disabled])',
+        'input:not([disabled])',
+        'select:not([disabled])',
+        'textarea:not([disabled])',
+        '[tabindex]:not([tabindex="-1"])'
+      ].join(',');
+      let lastTrigger = null;
+
+      const setBackgroundInert = (isInert) => {
+        Array.from(document.body.children).forEach((node) => {
+          if (node === dialog) return;
+          if (isInert) {
+            node.setAttribute('inert', '');
+          } else {
+            node.removeAttribute('inert');
+          }
+        });
+      };
 
       const closeLightbox = () => {
-        if (dialog.open) dialog.close();
+        if (!dialog.open) return;
+        dialog.close();
+        setBackgroundInert(false);
+        if (lastTrigger) {
+          lastTrigger.focus();
+          lastTrigger = null;
+        }
       };
 
       zoomableLinks.forEach((link) => {
@@ -198,18 +275,44 @@
           event.preventDefault();
           const img = link.querySelector('img');
           if (!img) return;
+          lastTrigger = link;
           dialogImage.src = img.src || link.href;
           dialogImage.alt = img.alt || 'Expanded image preview';
+          setBackgroundInert(true);
           dialog.showModal();
+          closeButton.focus();
         });
       });
 
       closeButton.addEventListener('click', closeLightbox);
+      dialog.addEventListener('close', () => {
+        setBackgroundInert(false);
+      });
       dialog.addEventListener('click', (event) => {
         if (event.target === dialog) closeLightbox();
       });
       document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') closeLightbox();
+        if (!dialog.open) return;
+        if (event.key === 'Escape') {
+          closeLightbox();
+          return;
+        }
+        if (event.key !== 'Tab') return;
+
+        const focusable = dialog.querySelectorAll(focusableSelector);
+        if (!focusable.length) return;
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        const active = document.activeElement;
+
+        if (event.shiftKey && active === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && active === last) {
+          event.preventDefault();
+          first.focus();
+        }
       });
     })();
   </script>
