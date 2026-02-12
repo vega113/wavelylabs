@@ -5,6 +5,10 @@ FILE="index.html"
 [ -f "$FILE" ] || { echo "missing $FILE"; exit 1; }
 
 required=(
+  "assets/wavelylabs-logo.webp"
+  "assets/wavelylabs-header.webp"
+  "alt=\"WavelyLabs logo\""
+  "alt=\"WavelyLabs brand header with products SlidesLab and Tube2Web.\""
   "WavelyLabs"
   "AI tools for creators"
   "Currently in public beta. Pricing is visible. Billing will be enabled at launch."

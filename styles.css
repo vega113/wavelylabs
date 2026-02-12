@@ -47,6 +47,29 @@ section + section {
   text-align: center;
 }
 
+.hero-brand {
+  margin: 0 0 14px;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.hero-logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 20px rgba(15, 31, 42, 0.12);
+}
+
+.hero-header {
+  width: min(760px, 100%);
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 22px rgba(15, 31, 42, 0.08);
+}
+
 h1 {
   margin: 0;
   font-size: clamp(2.3rem, 5vw, 4.1rem);
