@@ -5,3 +5,4 @@ node_modules/
 /.idea/
 /.beads/metadata.json
 /.beads/interactions.jsonl
+/.deploy-pages/
