@@ -92,6 +92,7 @@ grep -Fq "Tube2Web" about.html || { echo "about page missing Tube2Web section"; 
 grep -Fq "KindChat — AI-moderated messaging" about.html || { echo "about page missing KindChat mention"; exit 1; }
 grep -Fq "Emosig — AI-based emotional signal research" about.html || { echo "about page missing Emosig mention"; exit 1; }
 grep -Fq "Founded by Yuri Zelikov" about.html || { echo "about page missing founder line"; exit 1; }
+grep -Fq "https://www.linkedin.com/in/yuri-zelikov-8aa9167/" about.html || { echo "about page missing LinkedIn link"; exit 1; }
 
 grep -Fq "Last updated: February 12, 2026" privacy.html || { echo "privacy page missing last updated date"; exit 1; }
 grep -Fq "Data We Collect" privacy.html || { echo "privacy page missing data policy section"; exit 1; }
