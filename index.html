@@ -141,5 +141,39 @@
       <a href="/terms">Terms of Service</a>
     </p>
   </footer>
+
+  <dialog id="image-lightbox" class="lightbox" aria-label="Expanded image preview">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
+    <img id="lightbox-image" class="lightbox-image" src="" alt="" />
+  </dialog>
+
+  <script>
+    (() => {
+      const dialog = document.getElementById('image-lightbox');
+      const dialogImage = document.getElementById('lightbox-image');
+      const closeButton = document.getElementById('lightbox-close');
+      const zoomableImages = document.querySelectorAll('.real-shot img');
+
+      const closeLightbox = () => {
+        if (dialog.open) dialog.close();
+      };
+
+      zoomableImages.forEach((img) => {
+        img.addEventListener('click', () => {
+          dialogImage.src = img.src;
+          dialogImage.alt = img.alt;
+          dialog.showModal();
+        });
+      });
+
+      closeButton.addEventListener('click', closeLightbox);
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) closeLightbox();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeLightbox();
+      });
+    })();
+  </script>
 </body>
 </html>
