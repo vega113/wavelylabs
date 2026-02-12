@@ -10,9 +10,9 @@ Place final screenshots here with exact filenames.
 
 ## Tube2Web
 
-- `tube2web-import-content-modal.jpg`
-- `tube2web-creator-dashboard-grid.jpg`
-- `tube2web-public-generated-site.jpg`
-- `tube2web-pricing-page.jpg`
+- `tube2web-import-content-modal.webp`
+- `tube2web-creator-dashboard-grid.webp`
+- `tube2web-public-generated-site.webp`
+- `tube2web-pricing-page.webp`
 
 These are rendered in the homepage `Product Examples` section.
