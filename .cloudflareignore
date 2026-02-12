@@ -1,0 +1,9 @@
+.git/
+.github/
+.idea/
+.beads/
+docs/
+tests/
+.env
+AGENTS.md
+README.md
