@@ -15,7 +15,7 @@ required=(
   "Export-ready output"
   "https://slideslab.ai"
   "Try SlidesLab"
-  "Screenshot placeholder: SlidesLab main editor showing generated slide deck with AI prompt panel."
+  "SlidesLab generation workflow with live multi-variant status."
   "Tube2Web"
   "Turn YouTube playlists into searchable AI-powered websites."
   "Auto-import videos"
@@ -23,7 +23,7 @@ required=(
   "Semantic search"
   "https://tube2web.ai"
   "Explore Tube2Web"
-  "Screenshot placeholder: Tube2Web dashboard showing playlist import and generated website preview."
+  "Tube2Web generated public site with search and AI chat."
   "Product Examples"
   "SlidesLab Final Selection"
   "Generation Status (variants view)"
@@ -56,10 +56,23 @@ required=(
   "&copy; 2026 WavelyLabs"
   "Privacy Policy"
   "Terms of Service"
+  "assets/slideslab-product-hero.webp\" alt=\"SlidesLab generation status with multiple slide variants in progress.\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"1440\" height=\"810\""
+  "assets/tube2web-public-generated-site.webp\" alt=\"Public Tube2Web generated site with search, AI chat, and content collections.\" loading=\"lazy\" decoding=\"async\" width=\"1600\" height=\"871\""
+  "class=\"portrait-fit\" src=\"assets/slideslab-recent-generations-dashboard.webp\""
 )
 
 for text in "${required[@]}"; do
   grep -Fq "$text" "$FILE" || { echo "missing required text: $text"; exit 1; }
+done
+
+for forbidden in \
+  "Screenshot placeholder: SlidesLab main editor showing generated slide deck with AI prompt panel." \
+  "Screenshot placeholder: Tube2Web dashboard showing playlist import and generated website preview."
+do
+  if grep -Fq "$forbidden" "$FILE"; then
+    echo "forbidden placeholder text still present in products section"
+    exit 1
+  fi
 done
 
 for page in privacy.html terms.html; do

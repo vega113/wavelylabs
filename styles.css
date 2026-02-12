@@ -199,6 +199,17 @@ a {
   display: block;
 }
 
+.product-shot img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.portrait-fit {
+  object-fit: contain;
+  object-position: top center;
+  background: #0d1c29;
+}
+
 .real-shot figcaption {
   margin: 0;
   padding: 8px 10px;
@@ -275,5 +286,9 @@ a {
   .mockshot,
   .preview-shot {
     min-height: 190px;
+  }
+
+  .product-shot img {
+    height: 210px;
   }
 }
