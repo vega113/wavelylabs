@@ -1,0 +1,143 @@
+:root {
+  --bg: #f3f6f8;
+  --surface: #ffffff;
+  --ink: #10212a;
+  --muted: #4a616d;
+  --line: #d3dde3;
+  --accent: #0b8f88;
+  --accent-2: #1454c4;
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1000px 560px at 100% -10%, #e1f0f3 0%, transparent 68%),
+    radial-gradient(900px 460px at -10% 10%, #e5ecfa 0%, transparent 70%),
+    var(--bg);
+  line-height: 1.5;
+}
+
+.page {
+  width: min(960px, 92vw);
+  margin: 0 auto;
+  padding: 72px 0 40px;
+}
+
+section {
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  backdrop-filter: blur(2px);
+}
+
+section + section {
+  margin-top: 16px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 4.8vw, 3.8rem);
+  line-height: 1.03;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.tagline {
+  margin: 8px 0 0;
+  font-family: "Instrument Serif", "Times New Roman", serif;
+  font-size: clamp(1.2rem, 2.7vw, 1.95rem);
+  font-style: italic;
+}
+
+.summary {
+  margin: 16px 0 0;
+  max-width: 65ch;
+  color: var(--muted);
+}
+
+.cards {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px;
+  background: #fff;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.18rem;
+}
+
+.card p {
+  margin: 10px 0;
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent-2);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.status p,
+.contact p {
+  margin: 0;
+}
+
+.contact p + p {
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+.footer {
+  width: min(960px, 92vw);
+  margin: 0 auto;
+  padding: 0 0 40px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding-top: 36px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

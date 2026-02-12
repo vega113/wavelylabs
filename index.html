@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WavelyLabs | AI tools for creators</title>
+  <meta name="description" content="WavelyLabs builds software products focused on visual communication and content automation." />
+  <meta property="og:title" content="WavelyLabs" />
+  <meta property="og:description" content="AI tools for creators" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="site-title">
+      <p class="eyebrow">Umbrella Brand</p>
+      <h1 id="site-title">WavelyLabs</h1>
+      <p class="tagline">AI tools for creators</p>
+      <p class="summary">We build software products focused on visual communication and content automation.</p>
+    </section>
+
+    <section class="products" aria-labelledby="products-title">
+      <h2 id="products-title">Products</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>SlidesLab</h3>
+          <p>AI slide generation</p>
+          <a href="https://slideslab.ai" target="_blank" rel="noopener noreferrer">slideslab.ai</a>
+        </article>
+        <article class="card">
+          <h3>Tube2Web</h3>
+          <p>Turn YouTube playlists into AI websites</p>
+          <a href="https://tube2web.ai" target="_blank" rel="noopener noreferrer">tube2web.ai</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="status" aria-labelledby="status-title">
+      <h2 id="status-title">Status</h2>
+      <p>Our products are currently in public beta.</p>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p><a href="mailto:hello@wavelylabs.com">hello@wavelylabs.com</a></p>
+      <p>Tel Aviv</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> WavelyLabs</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
