@@ -15,6 +15,10 @@ python3 -m http.server 8080
 ./tests/site-content.sh
 ```
 
+## Issue tracking (Beads)
+
+This repo uses Beads (`bd`). See `docs/beads.md`.
+
 ## Deploy to Cloudflare Pages
 
 ```bash

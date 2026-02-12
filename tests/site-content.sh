@@ -8,6 +8,9 @@ required=(
   "WavelyLabs"
   "AI tools for creators"
   "We build software products focused on visual communication and content automation."
+  "Entity behind SlidesLab & Tube2Web"
+  "Public beta"
+  "Contact: hello@wavelylabs.com"
   "SlidesLab"
   "AI slide generation"
   "https://slideslab.ai"
@@ -28,6 +31,10 @@ required=(
   "Tel Aviv"
   "Privacy Policy"
   "Terms of Service"
+  "aria-label=\"Visit SlidesLab website\""
+  "aria-label=\"Open SlidesLab demo\""
+  "aria-label=\"Visit Tube2Web website\""
+  "aria-label=\"Open Tube2Web demo\""
 )
 
 for text in "${required[@]}"; do
@@ -37,5 +44,10 @@ done
 for page in privacy.html terms.html; do
   [ -f "$page" ] || { echo "missing required legal page: $page"; exit 1; }
 done
+
+grep -Fq "Last updated: February 12, 2026" privacy.html || { echo "privacy page missing last updated date"; exit 1; }
+grep -Fq "Data We Collect" privacy.html || { echo "privacy page missing data policy section"; exit 1; }
+grep -Fq "Last updated: February 12, 2026" terms.html || { echo "terms page missing last updated date"; exit 1; }
+grep -Fq "Limitation of Liability" terms.html || { echo "terms page missing limitation section"; exit 1; }
 
 echo "site content checks passed"

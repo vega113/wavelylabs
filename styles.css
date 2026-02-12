@@ -1,11 +1,20 @@
 :root {
-  --bg: #f3f6f8;
+  --bg: #edf3f6;
   --surface: #ffffff;
-  --ink: #10212a;
+  --surface-soft: #f7fbfd;
+  --ink: #0d1e28;
   --muted: #4a616d;
   --line: #d3dde3;
+  --line-strong: #a8b9c5;
   --accent: #0b8f88;
   --accent-2: #1454c4;
+  --accent-soft: #edf4f8;
+  --placeholder-bg: #f8fbfd;
+  --placeholder-border: #9bb0bb;
+  --placeholder-text: #36515d;
+  --cta-border: #88a2b1;
+  --cta-border-hover: #6a8fa2;
+  --cta-text: #0f2a3a;
   --radius: 16px;
 }
 
@@ -19,14 +28,14 @@ body {
   font-family: "Manrope", "Segoe UI", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(1000px 560px at 100% -10%, #e1f0f3 0%, transparent 68%),
-    radial-gradient(900px 460px at -10% 10%, #e5ecfa 0%, transparent 70%),
+    radial-gradient(1000px 560px at 100% -10%, #deedf2 0%, transparent 68%),
+    radial-gradient(900px 460px at -10% 10%, #e2eafb 0%, transparent 70%),
     var(--bg);
   line-height: 1.5;
 }
 
 .page {
-  width: min(960px, 92vw);
+  width: min(1020px, 92vw);
   margin: 0 auto;
   padding: 72px 0 40px;
 }
@@ -53,15 +62,15 @@ section + section {
 
 h1 {
   margin: 0;
-  font-size: clamp(2.1rem, 4.8vw, 3.8rem);
+  font-size: clamp(2.3rem, 5vw, 4rem);
   line-height: 1.03;
 }
 
 h2 {
   margin: 0 0 14px;
-  font-size: 1rem;
+  font-size: 0.92rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
   color: var(--muted);
 }
 
@@ -74,13 +83,30 @@ h2 {
 
 .summary {
   margin: 16px 0 0;
-  max-width: 65ch;
+  max-width: 62ch;
   color: var(--muted);
+}
+
+.proof-strip {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.proof-strip li {
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-size: 0.86rem;
+  background: var(--surface-soft);
 }
 
 .cards {
   display: grid;
-  gap: 12px;
+  gap: 14px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -88,7 +114,7 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 18px;
-  background: #fff;
+  background: var(--surface);
 }
 
 .card h3 {
@@ -101,15 +127,36 @@ h2 {
   color: var(--muted);
 }
 
-.screenshot-placeholder,
-.demo-placeholder {
+.mockshot {
   margin: 10px 0 14px;
-  padding: 12px;
-  border: 1px dashed #9bb0bb;
-  border-radius: 10px;
-  background: #f8fbfd;
-  color: #36515d;
-  font-size: 0.92rem;
+  border: 1px dashed var(--placeholder-border);
+  border-radius: 12px;
+  background: var(--placeholder-bg);
+  color: var(--placeholder-text);
+  min-height: 190px;
+  display: grid;
+  align-items: end;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.mockshot::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(20, 84, 196, 0.07), transparent 40%),
+    linear-gradient(320deg, rgba(11, 143, 136, 0.06), transparent 45%);
+}
+
+.mockshot figcaption {
+  margin: 0;
+  padding: 11px 12px;
+  font-size: 0.9rem;
+  border-top: 1px dashed var(--placeholder-border);
+  backdrop-filter: blur(1px);
+  position: relative;
 }
 
 .card-actions {
@@ -119,14 +166,12 @@ h2 {
   align-items: center;
 }
 
-a,
-.text-link {
+a {
   color: var(--accent-2);
   text-underline-offset: 2px;
 }
 
-a:hover,
-.text-link:hover {
+a:hover {
   color: var(--accent);
 }
 
@@ -136,16 +181,16 @@ a:hover,
   justify-content: center;
   padding: 8px 12px;
   border-radius: 999px;
-  border: 1px solid #88a2b1;
-  color: #0f2a3a;
-  background: #edf4f8;
+  border: 1px solid var(--cta-border);
+  color: var(--cta-text);
+  background: var(--accent-soft);
   text-decoration: none;
   font-weight: 700;
 }
 
 .cta:hover {
-  border-color: #6a8fa2;
-  color: #0b8f88;
+  border-color: var(--cta-border-hover);
+  color: var(--accent);
 }
 
 .demo-grid {
@@ -158,12 +203,16 @@ a:hover,
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 18px;
-  background: #fff;
+  background: var(--surface);
 }
 
 .demo-item h3 {
   margin: 0;
   font-size: 1.06rem;
+}
+
+.demo-shot {
+  min-height: 220px;
 }
 
 .status p,
@@ -177,7 +226,7 @@ a:hover,
 }
 
 .footer {
-  width: min(960px, 92vw);
+  width: min(1020px, 92vw);
   margin: 0 auto;
   padding: 0 0 40px;
   color: var(--muted);
