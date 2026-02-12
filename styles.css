@@ -272,6 +272,12 @@ a {
   margin: 6px 0;
 }
 
+.about-item + .about-item {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
 .footer {
   width: min(1040px, 92vw);
   margin: 0 auto;

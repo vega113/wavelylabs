@@ -58,6 +58,7 @@ required=(
   "hello@wavelylabs.com"
   "mailto:hello@wavelylabs.com"
   "&copy; 2026 WavelyLabs"
+  "About"
   "Privacy Policy"
   "Terms of Service"
   "assets/slideslab-product-hero.webp\" alt=\"SlidesLab generation status with multiple slide variants in progress.\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"1440\" height=\"810\""
@@ -82,6 +83,15 @@ done
 for page in privacy.html terms.html; do
   [ -f "$page" ] || { echo "missing required legal page: $page"; exit 1; }
 done
+
+[ -f "about.html" ] || { echo "missing required page: about.html"; exit 1; }
+grep -Fq "About WavelyLabs" about.html || { echo "about page missing title"; exit 1; }
+grep -Fq "A software studio focused on applied AI." about.html || { echo "about page missing positioning line"; exit 1; }
+grep -Fq "SlidesLab" about.html || { echo "about page missing SlidesLab section"; exit 1; }
+grep -Fq "Tube2Web" about.html || { echo "about page missing Tube2Web section"; exit 1; }
+grep -Fq "KindChat — AI-moderated messaging" about.html || { echo "about page missing KindChat mention"; exit 1; }
+grep -Fq "Emosig — AI-based emotional signal research" about.html || { echo "about page missing Emosig mention"; exit 1; }
+grep -Fq "Founded by Yuri Zelikov" about.html || { echo "about page missing founder line"; exit 1; }
 
 grep -Fq "Last updated: February 12, 2026" privacy.html || { echo "privacy page missing last updated date"; exit 1; }
 grep -Fq "Data We Collect" privacy.html || { echo "privacy page missing data policy section"; exit 1; }
