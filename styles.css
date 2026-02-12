@@ -223,6 +223,11 @@ a {
   cursor: zoom-in;
 }
 
+.zoom-link {
+  display: block;
+  line-height: 0;
+}
+
 .product-shot img {
   height: 250px;
   object-fit: cover;

@@ -65,6 +65,8 @@ required=(
   "id=\"lightbox-image\""
   "id=\"lightbox-close\""
   "dialog.showModal()"
+  "class=\"zoom-link\" href=\"assets/slideslab-product-hero.webp\""
+  "class=\"zoom-link\" href=\"assets/tube2web-public-generated-site.webp\""
   "assets/slideslab-product-hero.webp\" alt=\"SlidesLab generation status with multiple slide variants in progress.\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"1440\" height=\"810\""
   "assets/tube2web-public-generated-site.webp\" alt=\"Public Tube2Web generated site with search, AI chat, and content collections.\" loading=\"lazy\" decoding=\"async\" width=\"1600\" height=\"871\""
   "class=\"portrait-fit\" src=\"assets/slideslab-recent-generations-dashboard.webp\""
