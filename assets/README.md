@@ -4,9 +4,9 @@ Place final screenshots here with exact filenames.
 
 ## SlidesLab
 
-- `slideslab-generation-status.jpg`
-- `slideslab-recent-generations-dashboard.jpg`
-- `slideslab-pricing-page.jpg`
+- `slideslab-generation-status.webp`
+- `slideslab-recent-generations-dashboard.webp`
+- `slideslab-pricing-page.webp`
 
 ## Tube2Web
 
