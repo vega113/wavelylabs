@@ -57,6 +57,9 @@ body {
   line-height: var(--lh-body);
   font-family: var(--font-body);
   font-size: var(--fs-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background:
     radial-gradient(1100px 520px at 100% -15%, #dbeaf1 0%, transparent 68%),
     radial-gradient(900px 420px at 0% 8%, #e1e8f9 0%, transparent 72%),
@@ -174,12 +177,12 @@ section {
   background: color-mix(in srgb, var(--surface-2) 84%, transparent);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  padding: 30px;
+  padding: clamp(20px, 2.6vw, 32px);
   box-shadow: var(--shadow-soft);
 }
 
 section + section {
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 h1,
@@ -189,6 +192,7 @@ h4 {
   margin: 0;
   line-height: var(--lh-heading);
   color: var(--ink-1);
+  text-wrap: balance;
 }
 
 h1 {
@@ -213,6 +217,11 @@ h3 {
 
 p {
   margin: 0;
+  text-wrap: pretty;
+}
+
+li {
+  text-wrap: pretty;
 }
 
 a {
@@ -259,6 +268,7 @@ a {
   font-style: italic;
   font-size: clamp(1.25rem, 2.7vw, 2rem);
   color: var(--ink-2);
+  line-height: 1.22;
 }
 
 .beta-note {
@@ -524,6 +534,7 @@ a {
 .about-section-body {
   display: grid;
   gap: 10px;
+  max-width: 78ch;
 }
 
 .about-products-list {
@@ -603,6 +614,10 @@ a {
 
 .legal-content p:last-child {
   margin-bottom: 0;
+}
+
+.legal-content .about-item {
+  padding-bottom: 10px;
 }
 
 .back-home {
@@ -753,6 +768,44 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .legal-toc {
+    padding: 12px;
+  }
+
+  .legal-toc-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .legal-toc-list li {
+    min-width: 0;
+  }
+
+  .legal-toc-list a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface-3);
+    color: var(--ink-2);
+    text-decoration: none;
+    font-size: 0.84rem;
+    font-weight: var(--fw-meta);
+    line-height: 1.25;
+    text-align: center;
+    white-space: normal;
+    padding: 0 10px;
+  }
+
+  .legal-content {
+    font-size: 0.97rem;
+  }
+
   .product-card-header {
     flex-direction: column;
   }
@@ -799,6 +852,27 @@ section {
 
   section {
     padding: 16px;
+  }
+
+  .legal-toc {
+    padding: 10px;
+  }
+
+  .legal-toc-title {
+    margin-bottom: 8px;
+    font-size: 0.79rem;
+  }
+
+  .legal-content {
+    font-size: 0.95rem;
+  }
+
+  .legal-toc-list {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-content h3 {
+    font-size: 0.98rem;
   }
 
   .hero h1 {
