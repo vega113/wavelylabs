@@ -325,6 +325,7 @@ a {
 
 .products .cards {
   margin-top: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .cards {
@@ -404,6 +405,12 @@ a {
 .cta:hover {
   transform: translateY(-1px);
   box-shadow: 0 8px 18px rgba(13, 126, 168, 0.24);
+}
+
+.secondary-cta {
+  background: var(--surface-3);
+  color: var(--accent-strong);
+  box-shadow: none;
 }
 
 .real-shot {
@@ -772,6 +779,7 @@ section {
   }
 
   .cards,
+  .products .cards,
   .proof-grid,
   .about-products-list,
   .narrative-steps,
