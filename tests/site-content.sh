@@ -34,14 +34,14 @@ required=(
   "Semantic search"
   "Explore Tube2Web"
   "Tube2Web generated public site with search and AI chat."
-  "TubeScribes"
+  "Keldura"
   "Turn videos, documents, websites, and folders into searchable transcript libraries."
   "Bulk import and auto-sync"
   "Cited folder chat"
   "Telegram and API access"
-  "Try TubeScribes"
+  "Try Keldura"
   "Watch welcome video"
-  "TubeScribes folder chat with suggested research questions and cited source workflow."
+  "Keldura folder chat with suggested research questions and cited source workflow."
   "Product Examples"
   "SlidesLab Examples"
   "Generation Status (variants view)"
@@ -66,7 +66,7 @@ required=(
   "assets/tube2web-creator-dashboard-grid.webp"
   "assets/tube2web-public-generated-site.webp"
   "assets/tube2web-pricing-page.webp"
-  "TubeScribes Examples"
+  "Keldura Examples"
   "Transcription Workspace"
   "Single-video transcription with generated insights, chat, transcript, and source preview."
   "Bulk Import Workspace"
@@ -77,11 +77,11 @@ required=(
   "Folder-level AI chat with suggested questions across a multi-file research collection."
   "Telegram Bot Access"
   "Telegram bot management for bringing folder knowledge into chat workflows."
-  "assets/tubescribes-transcription.webp"
-  "assets/tubescribes-import.webp"
-  "assets/tubescribes-library.webp"
-  "assets/tubescribes-folder-chat.webp"
-  "assets/tubescribes-bots.webp"
+  "assets/keldura-transcription.webp"
+  "assets/keldura-import.webp"
+  "assets/keldura-library.webp"
+  "assets/keldura-folder-chat.webp"
+  "assets/keldura-bots.webp"
   "https://youtu.be/--MvnE1iCzs"
   "WavelyLabs builds and maintains software products focused on visual communication, content automation, and transcript intelligence."
   "Primary support:"
@@ -99,10 +99,10 @@ required=(
   "dialog.showModal()"
   "class=\"zoom-link\" href=\"assets/slideslab-product-hero.webp\""
   "class=\"zoom-link\" href=\"assets/tube2web-public-generated-site.webp\""
-  "class=\"zoom-link\" href=\"assets/tubescribes-folder-chat.webp\""
+  "class=\"zoom-link\" href=\"assets/keldura-folder-chat.webp\""
   "assets/slideslab-product-hero.webp\" alt=\"SlidesLab generation status with multiple slide variants in progress.\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"1440\" height=\"810\""
   "assets/tube2web-public-generated-site.webp\" alt=\"Public Tube2Web generated site with search, AI chat, and content collections.\" loading=\"lazy\" decoding=\"async\" width=\"1600\" height=\"871\""
-  "assets/tubescribes-folder-chat.webp\" alt=\"TubeScribes folder chat screen with cited questions for a demo research library.\" loading=\"lazy\" decoding=\"async\" width=\"1265\" height=\"720\""
+  "assets/keldura-folder-chat.webp\" alt=\"Keldura folder chat screen with cited questions for a demo research library.\" loading=\"lazy\" decoding=\"async\" width=\"1265\" height=\"720\""
   "class=\"portrait-fit\" src=\"assets/slideslab-recent-generations-dashboard.webp\""
 )
 
@@ -129,8 +129,8 @@ grep -Fq "About WavelyLabs" about.html || { echo "about page missing title"; exi
 grep -Fq "A software studio focused on applied AI." about.html || { echo "about page missing positioning line"; exit 1; }
 grep -Fq "SlidesLab" about.html || { echo "about page missing SlidesLab section"; exit 1; }
 grep -Fq "Tube2Web" about.html || { echo "about page missing Tube2Web section"; exit 1; }
-grep -Fq "TubeScribes" about.html || { echo "about page missing TubeScribes section"; exit 1; }
-grep -Fq "https://www.tubescribes.com/" about.html || { echo "about page missing TubeScribes link"; exit 1; }
+grep -Fq "Keldura" about.html || { echo "about page missing Keldura section"; exit 1; }
+grep -Fq "https://keldura.ai/" about.html || { echo "about page missing Keldura link"; exit 1; }
 grep -Fq "KindChat — AI-moderated messaging" about.html || { echo "about page missing KindChat mention"; exit 1; }
 grep -Fq "Emosig — AI-based emotional signal research" about.html || { echo "about page missing Emosig mention"; exit 1; }
 grep -Fq "Founded by Yuri Zelikov" about.html || { echo "about page missing founder line"; exit 1; }
@@ -146,9 +146,9 @@ done
 
 grep -Fq "Last updated: February 12, 2026" privacy.html || { echo "privacy page missing last updated date"; exit 1; }
 grep -Fq "Data We Collect" privacy.html || { echo "privacy page missing data policy section"; exit 1; }
-grep -Fq "SlidesLab, Tube2Web, and TubeScribes" privacy.html || { echo "privacy page missing TubeScribes operator reference"; exit 1; }
+grep -Fq "SlidesLab, Tube2Web, and Keldura" privacy.html || { echo "privacy page missing Keldura operator reference"; exit 1; }
 grep -Fq "Last updated: February 12, 2026" terms.html || { echo "terms page missing last updated date"; exit 1; }
 grep -Fq "Limitation of Liability" terms.html || { echo "terms page missing limitation section"; exit 1; }
-grep -Fq "SlidesLab, Tube2Web, and TubeScribes" terms.html || { echo "terms page missing TubeScribes product reference"; exit 1; }
+grep -Fq "SlidesLab, Tube2Web, and Keldura" terms.html || { echo "terms page missing Keldura product reference"; exit 1; }
 
 echo "site content checks passed"
